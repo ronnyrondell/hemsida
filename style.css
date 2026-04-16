@@ -365,6 +365,19 @@ ul {
   margin-top: auto;
 }
 
+.menu__price-meny {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.menu__note {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.03em;
+}
+
 /* =========================================
    ÖPPETTIDER
    ========================================= */
