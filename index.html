@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kafé Linden – Hemlagat med hjärta</title>
+  <title>Roforsgrillen – Prisvärda smashburgare i Luleå</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- Navigation -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="#" class="nav__logo">Kafé Linden</a>
+      <a href="#" class="nav__logo">Roforsgrillen</a>
       <nav>
         <ul class="nav__links">
           <li><a href="#meny">Meny</a></li>
@@ -29,75 +29,92 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__content">
-      <p class="hero__tagline">Välkommen till</p>
-      <h1 class="hero__title">Kafé Linden</h1>
-      <p class="hero__subtitle">Hemlagat med hjärta – mitt i staden</p>
-      <a href="#kontakt" class="btn">Kontakta oss</a>
+      <p class="hero__tagline">Luleås lokala grill</p>
+      <h1 class="hero__title">Roforsgrillen</h1>
+      <p class="hero__subtitle">Prisvärda smashburgare i Luleå</p>
+      <div class="hero__cta">
+        <a href="#meny" class="btn btn--primary">Se meny</a>
+        <a href="#kontakt" class="btn btn--outline">Hitta oss</a>
+      </div>
     </div>
     <div class="hero__overlay"></div>
   </section>
 
   <!-- Meny -->
-  <section id="meny" class="section section--light">
+  <section id="meny" class="section section--dark-alt">
     <div class="container">
-      <span class="section__label">Vårt utbud</span>
-      <h2 class="section__title">Meny</h2>
-      <p class="section__desc">Allt bakat och tillagat från grunden varje morgon.</p>
+      <span class="section__label section__label--red">Vårt utbud</span>
+      <h2 class="section__title section__title--light">Meny</h2>
+      <p class="section__desc section__desc--light">Tillagat med kärlek – snabbt, gott och prisvärt.</p>
 
       <div class="menu__grid">
 
         <div class="menu__card">
-          <div class="menu__icon">☕</div>
-          <div class="menu__info">
-            <h3>Kaffe Latte</h3>
-            <p>Espresso med krämig ångad mjölk, serveras varm eller kall</p>
+          <div class="menu__header">
+            <div class="menu__icon">🍔</div>
+            <span class="menu__badge">Populär</span>
           </div>
-          <span class="menu__price">49 kr</span>
+          <div class="menu__info">
+            <h3>Smash Burger</h3>
+            <p>Saftigt smashbakat nötkött, cheddar, sallad, tomat och husmajonäs</p>
+          </div>
+          <span class="menu__price">89 kr</span>
         </div>
 
         <div class="menu__card">
-          <div class="menu__icon">🍰</div>
+          <div class="menu__header">
+            <div class="menu__icon">🍔</div>
+            <span class="menu__badge menu__badge--gold">Storfavorit</span>
+          </div>
           <div class="menu__info">
-            <h3>Kladdkaka</h3>
-            <p>Klassisk svensk kladdkaka med vispad grädde och bär</p>
+            <h3>Dubbel Smashburger</h3>
+            <p>Dubbla smashade patties, dubbel cheddar och karamelliserad lök</p>
+          </div>
+          <span class="menu__price">119 kr</span>
+        </div>
+
+        <div class="menu__card">
+          <div class="menu__header">
+            <div class="menu__icon">🌯</div>
+          </div>
+          <div class="menu__info">
+            <h3>Kebabtallrik</h3>
+            <p>Rostad kebab med ris, sallad, tomat och vitlökssås</p>
+          </div>
+          <span class="menu__price">110 kr</span>
+        </div>
+
+        <div class="menu__card">
+          <div class="menu__header">
+            <div class="menu__icon">🌭</div>
+          </div>
+          <div class="menu__info">
+            <h3>Grillad Korv</h3>
+            <p>Klassisk grillkorv med bröd, senap och ketchup</p>
           </div>
           <span class="menu__price">55 kr</span>
         </div>
 
         <div class="menu__card">
-          <div class="menu__icon">🥐</div>
+          <div class="menu__header">
+            <div class="menu__icon">🍟</div>
+          </div>
           <div class="menu__info">
-            <h3>Kanelbulle</h3>
-            <p>Nybakad kanelbulle med kardemumma, dagens favorit</p>
+            <h3>Pommes Frites</h3>
+            <p>Krispiga gyllene pommes, serveras med valfri dipsås</p>
           </div>
           <span class="menu__price">35 kr</span>
         </div>
 
         <div class="menu__card">
-          <div class="menu__icon">🥗</div>
-          <div class="menu__info">
-            <h3>Lunchsoppa</h3>
-            <p>Dagens soppa med nybakat bröd och smör</p>
+          <div class="menu__header">
+            <div class="menu__icon">🥤</div>
           </div>
-          <span class="menu__price">115 kr</span>
-        </div>
-
-        <div class="menu__card">
-          <div class="menu__icon">🫖</div>
           <div class="menu__info">
-            <h3>Te & Kaka</h3>
-            <p>Valfritt te med en hemlagad småkaka</p>
+            <h3>Meal Deal</h3>
+            <p>Valfri burgare + pommes + dryck – bästa värdet</p>
           </div>
-          <span class="menu__price">65 kr</span>
-        </div>
-
-        <div class="menu__card">
-          <div class="menu__icon">🥪</div>
-          <div class="menu__info">
-            <h3>Smörgås</h3>
-            <p>Surdegsbröd med säsongens pålägg, alltid färskt</p>
-          </div>
-          <span class="menu__price">89 kr</span>
+          <span class="menu__price">139 kr</span>
         </div>
 
       </div>
@@ -105,64 +122,64 @@
   </section>
 
   <!-- Öppettider -->
-  <section id="oppettider" class="section section--beige">
+  <section id="oppettider" class="section section--light">
     <div class="container container--narrow">
-      <span class="section__label">När vi finns här</span>
+      <span class="section__label">Hitta oss när det passar</span>
       <h2 class="section__title">Öppettider</h2>
 
       <div class="hours__table">
-        <div class="hours__row">
-          <span class="hours__day">Måndag – Fredag</span>
+        <div class="hours__row hours__row--closed">
+          <span class="hours__day">Måndag</span>
           <span class="hours__divider"></span>
-          <span class="hours__time">07:30 – 18:00</span>
+          <span class="hours__time hours__time--closed">Stängt</span>
         </div>
         <div class="hours__row">
-          <span class="hours__day">Lördag</span>
+          <span class="hours__day">Tisdag – Fredag</span>
           <span class="hours__divider"></span>
-          <span class="hours__time">09:00 – 17:00</span>
+          <span class="hours__time">10:30 – 18:00</span>
         </div>
         <div class="hours__row">
-          <span class="hours__day">Söndag</span>
+          <span class="hours__day">Lördag – Söndag</span>
           <span class="hours__divider"></span>
-          <span class="hours__time">10:00 – 15:00</span>
+          <span class="hours__time">11:00 – 19:00</span>
         </div>
       </div>
 
-      <p class="hours__note">Köket stänger 30 minuter innan stängningstid.</p>
+      <p class="hours__note">Köket kan stänga tidigare vid låg beläggning.</p>
     </div>
   </section>
 
   <!-- Om oss -->
-  <section id="om-oss" class="section section--light">
+  <section id="om-oss" class="section section--warm">
     <div class="container container--narrow">
       <span class="section__label">Vår historia</span>
       <h2 class="section__title">Om oss</h2>
       <div class="about__body">
-        <p>Kafé Linden grundades 2018 av systrarna Emma och Sofia Lindgren med en enkel vision: att skapa en plats där människor kan ta en paus, känna sig välkomna och njuta av riktig husmanskost.</p>
-        <p>Vi lägger stor vikt vid lokala råvaror, hantverksmässigt bakverk och en omtänksam atmosfär. Allt på menyn bakas och tillagas från grunden varje dag i vårt lilla kök.</p>
-        <p>Vi tror att ett gott kaffe och en nybakad bulle kan göra en dag lite bättre. Välkommen in – du är alltid välkommen hos oss.</p>
+        <p>Roforsgrillen är en lokal grill i Luleå som serverar klassisk snabbmat med fokus på smak och kvalitet. Här hittar du allt från saftiga smashburgare till kebab och krispiga pommes – perfekt för en snabb och god måltid.</p>
+        <p>Vi tror att god mat inte ska kosta skjortan. Hos oss får du genuin grillmat lagad med rätt råvaror och serverad av trevlig personal som bryr sig om varje gäst.</p>
+        <p>Med uteservering och avslappnad stämning är Roforsgrillen den självklara träffpunkten längs Kallaxvägen – oavsett om du svänger förbi ensam eller med familjen.</p>
       </div>
       <div class="about__values">
         <div class="about__value">
-          <strong>Lokalt</strong>
-          <span>Råvaror från Skåne</span>
+          <strong>🔥 Smak</strong>
+          <span>Saftiga smashburgare</span>
         </div>
         <div class="about__value">
-          <strong>Hantverksmässigt</strong>
-          <span>Allt bakat för hand</span>
+          <strong>💰 Pris</strong>
+          <span>Alltid prisvärt</span>
         </div>
         <div class="about__value">
-          <strong>Hållbart</strong>
-          <span>Ekologiska val</span>
+          <strong>😊 Service</strong>
+          <span>Trevlig personal</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Kontakt -->
-  <section id="kontakt" class="section section--dark">
+  <section id="kontakt" class="section section--charcoal">
     <div class="container container--narrow">
-      <span class="section__label section__label--light">Hitta oss</span>
+      <span class="section__label section__label--red">Hitta oss</span>
       <h2 class="section__title section__title--light">Kontakt</h2>
 
       <div class="contact__grid">
@@ -170,21 +187,21 @@
           <div class="contact__icon">📍</div>
           <div>
             <strong>Adress</strong>
-            <p>Storgatan 14<br>211 22 Luleå</p>
+            <p>Kallaxvägen 255<br>975 95 Luleå</p>
           </div>
         </div>
         <div class="contact__item">
           <div class="contact__icon">📞</div>
           <div>
             <strong>Telefon</strong>
-            <p><a href="tel:+4640123456">040-12 34 56</a></p>
+            <p><a href="tel:+46702666097">070-266 60 97</a></p>
           </div>
         </div>
         <div class="contact__item">
-          <div class="contact__icon">✉️</div>
+          <div class="contact__icon">🪑</div>
           <div>
-            <strong>E-post</strong>
-            <p><a href="mailto:kontakt@kafelinden.se">kontakt@kafelinden.se</a></p>
+            <strong>Sittplatser</strong>
+            <p>Uteservering med bänkar och parasoll</p>
           </div>
         </div>
       </div>
@@ -195,7 +212,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© 2024 Kafé Linden. Alla rättigheter förbehållna.</p>
+      <p>© 2024 Roforsgrillen. Kallaxvägen 255, Luleå.</p>
     </div>
   </footer>
 
